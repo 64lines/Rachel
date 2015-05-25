@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <!-- Latest compiled and minified Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <!-- Bootstrap theme theme -->
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+        <!-- jQuery library -->
+        <script src="js/jquery-2.1.4.js"></script>
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- The hot and sexy Rachel -->
+        <script src="js/rachel.js"></script>
+        <script>
+            /**
+             * This is how Rachel want to be treated...
+             */
+            $(document).ready(function() {
+                Rachel.title = "Login form";
+                Rachel.generateForm(".container", [
+                    {
+                        "label": "Username",
+                        "id": "username",
+                        "type": "text",
+                        "placeholder": "Username"
+                    },
+                    {
+                        "label": "Password",
+                        "id": "password",
+                        "type": "password",
+                        "placeholder": "Password"
+                    },
+                    {
+                        "label": "Login",
+                        "id": "login",
+                        "type": "submit",
+                    }
+                ], function() {
+                    // Events, oh yeah, events.
+                    $("#login").on("click", function() {
+                        alert($("#username").val());
+                    });
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <!-- Yeah, just one div, you don't need nothing else -->
+        <div class="container"></div>
+    </body>
+</html>
