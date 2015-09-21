@@ -1,5 +1,5 @@
 # Rachel
-Hi I'm Rachel, I allow to you generate forms with my persuasive methods easily and smoothly. Please be gently with me...
+Rachel will allow you generate forms using only jQuery and JSON without HTML, easily and smoothly.
 
 Now you can generate entire forms with very few HTML using code like this:
 
