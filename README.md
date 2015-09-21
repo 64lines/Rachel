@@ -5,7 +5,7 @@ Now you can generate entire forms with very few HTML using code like this:
 
 ```
 /**
- * This is how Rachel want to be treated...
+ * This is how Rachel works
  */
 $(document).ready(function() {
     Rachel.title = "Login form";
@@ -36,8 +36,13 @@ $(document).ready(function() {
 });
 ```
 
-In the HTML you only need one DIV:
+In the HTML you only need import the library, your code and one DIV:
 ```
-<!-- Yeah, just one div, you don't need nothing else -->
-<div class="container"></div>
+<script src="js/rachel.js"></script>
+<script>
+... Your code ...
+</script>
+<body>
+    <div class="container"></div>
+</body>
 ```
